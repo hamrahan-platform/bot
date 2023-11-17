@@ -29,10 +29,11 @@ const RESOURCES = {"assets/AssetManifest.bin": "0af2b9e9ffaf00c3b05fc9efbd50c904
 "icons/Icon-512.png": "2cb4f5159281242aaf767478c4bc6dff",
 "icons/Icon-maskable-192.png": "306b7eddf5bed0af0db1bdaae700fb02",
 "icons/Icon-maskable-512.png": "2cb4f5159281242aaf767478c4bc6dff",
-"index.html": "668f77cfd27fed9e9316b6fb9cb14c48",
-"/": "668f77cfd27fed9e9316b6fb9cb14c48",
-"main.dart.js": "432c2c43c0159637acf59a005e8e054d",
-"manifest.json": "2fa373b537e53d87f5f4248ddc2725f9",
+"index.html": "3d7cba175e008d5894fb51a9764a1a12",
+"/": "3d7cba175e008d5894fb51a9764a1a12",
+"main.dart.js": "b4519bc9cd8be14d4dbacbe4d3d08d9b",
+"manifest.json": "b54f061ddd8d7d2afa07cd32652b5879",
+"telegram-web-app.js": "cf7720bd237dff026a00da88e1bf5dd5",
 "version.json": "867143dfa1c2673c7bc3d41d2a764aba"};
 // The application shell files that are downloaded before a service worker can
 // start.
