@@ -25747,7 +25747,7 @@ $1(a){var s=$.bV
 s=(s==null?$.bV=A.eh(self.window.flutterConfiguration):s).b
 if(s==null)s=null
 else{s=s.canvasKitBaseUrl
-if(s==null)s=null}return(s==null?"/":s)+a},
+if(s==null)s=null}return(s==null?"/canvaskit/":s)+a},
 $S:135}
 A.ah7.prototype={
 $1(a){this.a.remove()
