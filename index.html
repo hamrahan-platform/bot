@@ -35,7 +35,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "2187178336";
+    const serviceWorkerVersion = "1243961543";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -45,6 +45,15 @@
 <body>
   <script>
     function telegramReady() {
+      const telegram = window.Telegram;
+      const webApp = telegram?.WebApp;
+
+      webApp.ready();
+      webApp.expand();
+      webApp.setHeaderColor('#673AB7');
+    }
+
+    function telegramSendData(data) {
       const telegram = window.Telegram;
       const webApp = telegram?.WebApp;
 
