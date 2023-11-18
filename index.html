@@ -35,7 +35,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "441615202";
+    const serviceWorkerVersion = "2699682564";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -74,21 +74,14 @@
   <div id="loader" class="loader"></div>
 
   <script>
-    function telegramReady() {
-      const telegram = window.Telegram;
-      const webApp = telegram?.WebApp;
+    const telegram = window.Telegram;
+    const webApp = telegram?.WebApp;
 
-      webApp?.ready();
-      webApp?.expand();
-      webApp?.setHeaderColor('#673AB7');
-    }
 
-    telegramReady();
+    webApp?.setHeaderColor('#673AB7');
+    webApp?.expand();
 
     function telegramSendData(data) {
-      const telegram = window.Telegram;
-      const webApp = telegram?.WebApp;
-
       webApp?.sendData(data);
     }
     window.addEventListener('load', function (ev) {
@@ -104,6 +97,7 @@
             loader.remove();
 
             appRunner.runApp();
+            webApp?.ready();
           });
         }
       });
