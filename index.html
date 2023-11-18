@@ -35,7 +35,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "923489147";
+    const serviceWorkerVersion = "2987481417";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -80,12 +80,13 @@
 
     webApp?.setHeaderColor('#673AB7');
     webApp?.expand();
+    // webApp?.ready();
+
 
     function telegramSendData(data) {
       webApp?.sendData(data);
     }
     window.addEventListener('load', function (ev) {
-      //webApp?.ready();
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
@@ -98,6 +99,7 @@
             loader.remove();
 
             appRunner.runApp();
+            // webApp?.ready();
           });
         }
       });
